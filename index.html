@@ -27,147 +27,28 @@
     <link href="../../css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Home – Agence – Digital Agency Elementor Template Kit</title>
+    <script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+	    </script>
+	    <script> 
+	      $(function(){
+	      $("#header").load("header.html"); 
+	      $("#footer").load("footer.html"); 
+	    });
+    </script>
 </head>
 
 <body class="home">
-    <div id="siteLoader" class="site-loader ">
-        <div class="preloader-content">
-            <img src="assets/img/loader1.gif" alt="">
-        </div>
-    </div>
+   
     <div id="page" class="full-page">
-        <header id="masthead" class="site-header">
-            <div class="container">
-                <div class="hgroup-wrap d-flex justify-content-between align-items-sm-center">
-                    <div class="site-identity">
-                        <p class="site-title">
-                            <a href="index.html">
-                                <img src="assets/img/white-logo.png" alt="logo">
-                            </a>
-                        </p>
-                    </div>
-                    <div class="main-navigation">
-                        <nav id="navigation" class="navigation d-none d-lg-inline-block">
-                            <ul>
-                                <li class="current-menu-item">
-                                    <a href="index.html">home</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html">about us</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">pages</a>
-                                    <ul>
-                                        <li>
-                                            <a href="service.html">service</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio.html">portfolio</a>
-                                        </li>
-                                        <li>
-                                            <a href="portfolio-detail.html">portfolio detail</a>
-                                        </li>
-                                        <li>
-                                            <a href="team.html">team</a>
-                                        </li>
-                                        <li>
-                                            <a href="team-detail.html">team detail</a>
-                                        </li>
-                                        <li>
-                                            <a href="Career.html">carreer</a>
-                                        </li>
-                                        <li>
-                                            <a href="Career-Detail.html">carreer detail</a>
-                                        </li>
-                                        <li>
-                                            <a href="faq.html">faq</a>
-                                        </li>
-                                        <li>
-                                            <a href="testimonial.html">testimonial</a>
-                                        </li>
-                                        <li>
-                                            <a href="search.html">search result</a>
-                                        </li>
-                                        <li>
-                                            <a href="product-list.html">product list</a>
-                                        </li>
-                                        <li>
-                                            <a href="single-product.html">single product</a>
-                                        </li>
-                                        <li>
-                                            <a href="comming-soon.html">coming soon</a>
-                                        </li>
-                                        <li>
-                                            <a href="404page.html">404 page</a>
-                                        </li>
-                                        <li>
-                                            <a href="cart.html">Shop Cart</a>
-                                        </li>
-                                        <li>
-                                            <a href="product-cheakout.html">Cheakout</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">blog</a>
-                                    <ul>
-                                        <li>
-                                            <a href="single-post.html">blog list</a>
-                                        </li>
-                                        <li>
-                                            <a href="single-blog.html">single blog</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="contact.html">contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="side-nav d-flex justify-content-between align-items-center">
-                        <div class="header-icon-group">
-                            <div class="header-social social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/">
-                                            <i class="fab fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/?lang=en">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.youtube.com/">
-                                            <i class="fab fa-youtube"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="header-search-icon d-inline-block">
-                                <a href="#" class="search-icon">
-                                    <i class="fas fa-search"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="header-btn d-inline-block">
-                            <a href="contact.html" class="button-round-primary">Get A Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mobile-menu-container"></div>
-        </header>
+        <!--header-->
+        <div id="header"></div>
+
         <main id="content" class="site-main">
             <!-- home banner section html start -->
-            <section class="home-banner" style="background-image: url(assets/img/agency-img01.jpg);">
+            <section class="home-banner" style="background-image: url(assets/img/header-index-2.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
@@ -1184,122 +1065,8 @@
             </section>
         </main>
         <!-- footer part -->
-        <footer id="colophon" class="site-footer footer-primary">
-            <div class="footer-overlay"></div>
-            <div class="top-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 pe-lg-4">
-                            <aside class="widget widget_text img-textwidget">
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/white-logo.png" alt="logo"></a>
-                                </div>
-                                <div class="textwidget widget-text">
-                                    Auctor blandit dolorem primis eius odit soluta molestie? Malesuada elementum aut doloremque labo.
-                                </div>
-                            </aside>
-                            <div class="footer-social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com/" target="_blank">
-                                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.youtube.com/" target="_blank">
-                                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <aside class="widget">
-                                <h3 class="widget-title">Useful Links</h3>
-                                <ul>
-                                    <li>
-                                        <a href="about-us.html">About us</a>
-                                    </li>
-                                    <li>
-                                        <a href="Career.html">Careers</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-blog.html">News & Articles</a>
-                                    </li>
-                                    <li>
-                                        <a href="legal-notice.html">Legal Notice</a>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <aside class="widget">
-                                <h3 class="widget-title">Support</h3>
-                                <ul>
-                                    <li>
-                                        <a href="faq.html">Help Center</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="cart.html">Payment Center</a>
-                                    </li>
-                                    <li>
-                                        <a href="legal-notice.html">Parent Community</a>
-                                    </li>
-                                </ul>
-                            </aside>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <aside class="widget widget_text">
-                                <h3 class="widget-title">Contact Information</h3>
-                                <p>Feel free to contact and reach us !</p>
-                                <div class="textwidget widget-text">
-                                    <ul>
-                                        <li>
-                                            <i aria-hidden="true" class="icon icon-map-marker1"></i>
-                                            3557 Derek Drive, Florida
-                                        </li>
-                                        <li>
-                                            <a href="tel:+1456657887">
-                                                <i aria-hidden="true" class="icon icon-phone1"></i>
-                                                +1(456)657-887, +01 2599 12
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="mailtop:info@domain.com">
-                                                <i aria-hidden="true" class="icon icon-envelope1"></i>
-                                                <span class="__cf_email__" data-cfemail="0960676f66496d6664686067276a6664">[email&#160;protected]</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom-footer">
-                <div class="container">
-                    <div class="copy-right text-center">Copyright &copy; 2023 Agence. All rights reserved.</div>
-                </div>
-            </div>
-        </footer>
-        <!-- back to top -->
-        <a id="backTotop" href="#" class="to-top-icon">
-            <i class="fas fa-chevron-up"></i>
-        </a>
+        <div id="footer"></div>
+       
         <!-- custom search field html -->
         <div class="header-search-form">
             <div class="container">

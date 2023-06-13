@@ -1844,7 +1844,7 @@ input[type=submit]:focus {
 >>> Main Header 
 ----------------------------------------------------------------*/
 .site-header {
-  background-color: white;
+  background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: absolute;
   top: 0;
@@ -2089,7 +2089,7 @@ input[type=submit]:focus {
   display: none;
 }
 .site-header .main-navigation ul > li > a {
-  color: black;
+  color: white;
   display: inline-block;
   font-size: 15px;
   padding: 10px 0;
@@ -5057,7 +5057,7 @@ input[type=submit]:focus {
 }
 .diff-services-section .service-inner-wrap .types-of-benifit {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
   row-gap: 50px;
 }

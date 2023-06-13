@@ -2446,7 +2446,7 @@ input[type=submit]:focus {
 
 .fixed-header .site-title img:hover {
   opacity: 1;
-  filter: invert(100%) saturate(100%) hue-rotate(277deg) sepia(19%) contrast(500%);
+  
 }
 @media screen and (max-width: 991px) {
   .fixed-header .mobile-menu-container {

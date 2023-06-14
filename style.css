@@ -547,7 +547,7 @@ a:visited {
 # Others
 --------------------------------------------------------------*/
 .container {
-  max-width: 1170px;
+  max-width: 1290px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -5057,7 +5057,7 @@ input[type=submit]:focus {
 }
 .diff-services-section .service-inner-wrap .types-of-benifit {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
   row-gap: 50px;
 }

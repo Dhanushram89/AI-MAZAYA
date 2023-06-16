@@ -56,7 +56,7 @@ $('.client-slider').slick({
   prevArrow: false,
   nextArrow: false,
   slidesToShow: 5,
-  autoplay: false,
+  autoplay: true,
   responsive: [{
     breakpoint: 768,
       settings: {

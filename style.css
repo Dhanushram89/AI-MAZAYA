@@ -1935,7 +1935,7 @@ input[type=submit]:focus {
   }
 }
 .header-social a {
-  color: black;
+  color: white;
 }
 .header-social a:hover, .header-social a:focus {
   color: #B4260F;
@@ -2432,7 +2432,7 @@ input[type=submit]:focus {
   color: #B4260F;
 }
 .fixed-header .header-icon-group .header-social ul li a i {
-  color: #111111;
+  color: white;
 }
 .fixed-header .header-icon-group .header-social ul li a i:hover {
   color: #B4260F;

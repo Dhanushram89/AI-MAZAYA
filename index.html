@@ -38,6 +38,14 @@
 	      $("#footer").load("footer.html"); 
 	    });
     </script>
+    <script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script>
+ (function () {
+
+		emailjs.init("9ZwLQwAfauK_4HD2M");
+	})();</script>
 </head>
 
 <body class="home">
@@ -756,25 +764,54 @@
                                 </p>
                                 <form class="contact-form row">
                                     <div class="col-12 form-height">
-                                        <input type="text" class="form-control" placeholder="Your Name*">
+                                        <input id="name" type="text" class="form-control" placeholder="Your Name*">
                                     </div>
                                     <div class="col-12 form-height">
-                                        <input type="email" class="form-control" placeholder="Your Email*">
+                                        <input id="mail" class="form-control" placeholder="Your Email*">
                                     </div>
                                     <div class="col-12 form-height">
-                                        <input type="email" class="form-control" placeholder="Business Names">
+                                        <input id="business" class="form-control" placeholder="Business Names">
                                     </div>
                                     <div class="col-sm-12 form-height">
-                                        <textarea placeholder="Enter message" rows="6"></textarea>
+                                        <textarea id="message" placeholder="Enter message" rows="6"></textarea>
                                     </div>
                                     <div class="col-12 text-center text-md-start">
-                                        <button type="submit" class="button-round-primary">submit message</button>
+                                        <button onclick="sendMail()" type="submit" class="button-round-primary">submit message</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
+                <script>
+                    function sendMail() {
+                        var name = document.getElementById("name").value;
+			var mail=document.getElementById("mail").value;
+			var business=document.getElementById("business").value;
+			var message=document.getElementById("message").value;
+                      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                      if(mail!="" && business!="" && name!=""){
+				if(mail.match(mailformat)){
+
+			emailjs.send("service_gtrqqem", "template_n2lkwx9", {
+				name: name,
+				mail: mail,
+				message: message,
+				business: business
+				
+			})
+				alert("Your Order has been Placed. Please Wait for our team to reach you")
+
+
+			}
+			else{
+				alert("please check the Mail Format")
+			}
+		}else{
+				alert("Please Fill All the Required Fields or The Cart should not Be Empty")
+			}
+                }
+                    </script>
                 <div class="overlay"></div>
             </section>
             <!--<div class="project-counter-section">
@@ -977,7 +1014,7 @@
         </div>
     </div>
     <!-- JavaScript -->
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/vendors/jquery/jquery.js"></script>
+    <script src="assets/vendors/jquery/jquery.js"></script>
     <script src="assets/vendors/waypoint/jquery.waypoints.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendors/circle-progress/circle-progress.min.js"></script>

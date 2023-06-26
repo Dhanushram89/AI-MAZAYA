@@ -1844,7 +1844,7 @@ input[type=submit]:focus {
 >>> Main Header 
 ----------------------------------------------------------------*/
 .site-header {
-  background-color: transparent;
+  background-color: black;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: absolute;
   top: 0;

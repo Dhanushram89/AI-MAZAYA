@@ -197,7 +197,7 @@ img {
 /*-- Common Classes --*/
 .section,
 .main-wrapper {
-  float: left;
+  float:left;
   width: 100%;
 }
 
@@ -330,7 +330,7 @@ img {
   line-height: 60px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  color: #2f2a55;
+  color: #f94c30;
 }
 
 @media only screen and (max-width: 767px) {
@@ -375,7 +375,7 @@ img {
   line-height: 70px;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  color: #12283b;
+  color: #f94c30;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -2330,7 +2330,7 @@ textarea:-ms-input-placeholder {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #1cb098;
+  color: #f94c30;
 }
 
 .upstudy-hero-section-03 .hero-content .title {
@@ -2338,7 +2338,7 @@ textarea:-ms-input-placeholder {
   line-height: 90px;
   font-family: "Outfit", sans-serif;
   font-weight: 700;
-  color: #2f2a55;
+  color: black;
   margin-top: 15px;
 }
 
@@ -2366,6 +2366,8 @@ textarea:-ms-input-placeholder {
   height: 60px;
   line-height: 60px;
   padding: 0 65px;
+  color: white;
+  background-color: #f94c30;
 }
 
 .upstudy-hero-section-03 .hero-content .hero-btn .btn i {
@@ -4018,7 +4020,7 @@ textarea:-ms-input-placeholder {
 }
 
 .upstudy-counter-section-02 .counter-wrap {
-  background: #fdf8f4;
+  background: #272727;
   border-radius: 20px;
   position: relative;
   padding: 90px 105px 115px 70px;
@@ -4053,12 +4055,13 @@ textarea:-ms-input-placeholder {
   font-size: 42px;
   line-height: 60px;
   font-weight: 600;
+  color: white;
 }
 
 .upstudy-counter-section-02 .counter-left .read-more {
   font-size: 16px;
   font-weight: 700;
-  color: #1cb098;
+  color: #f94c30;
   margin-top: 35px;
 }
 
@@ -4069,7 +4072,7 @@ textarea:-ms-input-placeholder {
 }
 
 .upstudy-counter-section-02 .counter-left .read-more:hover {
-  color: #111a24;
+  color: white;
 }
 
 .upstudy-counter-section-02 .counter-right {
@@ -5821,7 +5824,7 @@ textarea:-ms-input-placeholder {
   font-size: 42px;
   line-height: 52px;
   font-weight: 600;
-  color: #2f2a55;
+  color: black;
   padding-right: 60px;
 }
 

@@ -485,7 +485,7 @@ dd {
 # Links
 --------------------------------------------------------------*/
 a {
-  color: #0085BA;
+  color: white;
   text-decoration: none;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
@@ -3233,7 +3233,7 @@ input[type=submit]:focus {
   margin-bottom: 0px;
   position: relative;
   font-family: "Poppins", sans-serif;
-  color: #1D274E;
+  color: #1b285e;
   font-size: 15px;
 }
 .section-about-content ul li:before {
@@ -3254,7 +3254,7 @@ input[type=submit]:focus {
 }
 .section-about-content p {
   margin-bottom: 15px;
-  color: #747DA1;
+  color: midnightblue;
 }
 .section-about-content .about-list {
   display: -webkit-box;
@@ -3515,7 +3515,7 @@ input[type=submit]:focus {
   color: #1D274E;
 }
 .contact-section .section-disc {
-  color: #747DA1;
+  color: darkblue;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 991px) {
@@ -3570,7 +3570,7 @@ input[type=submit]:focus {
   line-height: 1.1;
 }
 .contact-section .contact-detail span {
-  color: #747DA1;
+  color: darkblue;
   font-family: "Rubik", sans-serif;
   font-size: 15px;
   line-height: 1.6;

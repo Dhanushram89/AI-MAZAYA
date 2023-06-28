@@ -5306,8 +5306,8 @@ textarea:-ms-input-placeholder {
 }
 
 .upstudy-testimonial-section-02 {
-  background: #fdf8f4;
-  padding-top: 460px;
+  background: #272727;
+  
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -10726,7 +10726,7 @@ textarea:-ms-input-placeholder {
 
 .widget-link .link li a {
   font-size: 14px;
-  color: #cacaca;
+  color: white;
   transition: all 0.3s linear;
 }
 

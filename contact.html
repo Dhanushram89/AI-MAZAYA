@@ -114,7 +114,7 @@
                                         </div>
                                     </div>
                                     <div class="contact-info">
-                                        <span style="color: midnightblue;">OMAN : +968 96202296</span>
+                                        <span style="color: midnightblue;">OMAN : +968 96202296, +968 9736 0909</span>
                                         <span style="color: midnightblue;">UAE &nbsp; : +971 545754589</span>
                                     </div>
                                 </div>
@@ -144,8 +144,8 @@
                                         </div>
                                     </div>
                                     <div class="contact-info">
-                                        <span style="color: midnightblue;">Mon – Sat : 9am – 6pm</span>
-                                        <span style="color: midnightblue;">Sunday (Closed)</span>
+                                        <span style="color: midnightblue;">Mon – Sun : 8 am - 6 pm</span>
+                                        <span style="color: midnightblue;">Friday (Closed)</span>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@
                                         <p>
                                             We'll do our best to provide engaging and relevant content for our topic.</p>
                                     </div>
-                                    <a  class="button-round-white" href="https://wa.me/+968 92005628"> LET'S CHAT</a>
+                                    <a  class="button-round-white" href="https://wa.me/+968 9736 0909"> LET'S CHAT</a>
                                 </div>
                             </div>
                             <div class="col-lg-4">
@@ -214,20 +214,20 @@
                 <script>
                     function sendMail() {
                         var name = document.getElementById("name").value;
-			var mail=document.getElementById("email").value;
-			var business=document.getElementById("business").value;
-			var number=document.getElementById("number").value;
-			var message=document.getElementById("message").value;
-                      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-                      if(mail!="" && number!="" && business!=""&&name!=""){
-				if(mail.match(mailformat)){
+                        var mail=document.getElementById("email").value;
+                        var business=document.getElementById("business").value;
+                        var number=document.getElementById("number").value;
+                        var message=document.getElementById("message").value;
+                                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                                if(mail!="" && number!="" && business!=""&&name!=""){
+                            if(mail.match(mailformat)){
 
-			emailjs.send("service_gtrqqem", "template_md36blh", {
-				name: name,
-				mail: mail,
-				number: number,
-				message: message,
-				business: business
+                        emailjs.send("service_gtrqqem", "template_md36blh", {
+                            name: name,
+                            mail: mail,
+                            number: number,
+                            message: message,
+                            business: business
 				
 			})
 				alert("Your Order has been Placed. Please Wait for our team to reach you")

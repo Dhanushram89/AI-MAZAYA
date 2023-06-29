@@ -204,7 +204,7 @@ img {
 /*--Custom Container--*/
 @media only screen and (min-width: 1600px) {
   .custom-container {
-    padding: 0 50px;
+    padding: 0;
   }
 }
 

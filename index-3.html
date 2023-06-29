@@ -42,6 +42,7 @@
 	      $("#footer").load("footer.html"); 
 	    });
     </script>
+   
 </head>
 
 <body>
@@ -797,7 +798,8 @@
         <!-- Brand Logo End -->
 
         <!-- Footer Start -->
-        <div class="top-footer">
+        
+        <div class="top-footer" style="background-color: black;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 pe-lg-4">
@@ -907,7 +909,7 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-footer">
+        <div class="bottom-footer" style="background-color: black;">
             <div class="container">
                 <div class="copy-right text-center">Copyright &copy; 2023 ALMAZAYA ENTERPRISES LLC. All rights reserved by <a href="https://salesupgrade.in/">Sales Upgrade</a></div>
             </div> 
@@ -951,6 +953,53 @@
 
     <!-- Main JS -->
     <script src="assets1/js/main.js"></script>
+    <script>function menuScript() {
+
+        $('.menu-toggle').on('click', function(){
+            $('.mobile-menu').addClass('open')
+            $('.overlay').addClass('open')
+        });
+        
+        $('.menu-close').on('click', function(){
+            $('.mobile-menu').removeClass('open')
+            $('.overlay').removeClass('open')
+        });
+        
+        $('.overlay').on('click', function(){
+            $('.mobile-menu').removeClass('open')
+            $('.overlay').removeClass('open')
+        });
+        
+        /*Variables*/
+        var $offCanvasNav = $('.offcanvas-menu'),
+        $offCanvasNavSubMenu = $offCanvasNav.find('.sub-menu');
+
+        /*Add Toggle Button With Off Canvas Sub Menu*/
+        $offCanvasNavSubMenu.parent().prepend('<span class="mobile-menu-expand"></span>');
+
+        /*Close Off Canvas Sub Menu*/
+        $offCanvasNavSubMenu.slideUp();
+
+        /*Category Sub Menu Toggle*/
+        $offCanvasNav.on('click', 'li a, li .mobile-menu-expand, li .menu-title', function(e) {
+            var $this = $(this);
+            if (($this.parent().attr('class').match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/)) && ($this.attr('href') === '#' || $this.hasClass('mobile-menu-expand'))) {
+                e.preventDefault();
+                if ($this.siblings('ul:visible').length) {
+                    $this.parent('li').removeClass('active-expand');
+                    $this.siblings('ul').slideUp();
+                } else {
+                    $this.parent('li').addClass('active-expand');
+                    $this.closest('li').siblings('li').find('ul:visible').slideUp();
+                    $this.closest('li').siblings('li').removeClass('active-expand');
+                    $this.siblings('ul').slideDown();
+                }
+            }
+        });
+
+        $( ".sub-menu" ).parent( "li" ).addClass( "menu-item-has-children" );
+    }
+    menuScript();</script>
     
 </body>
 
